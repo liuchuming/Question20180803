@@ -11,4 +11,9 @@ Q3:ubuntu更换源
     sudo cp /etc/apt/source.list /etc/apt/source.list.bak  
     sudo gedit /etc/apt/source.list删除所有内容,负责163源  
     sudo apt-get update
-        
+
+Q4:vim : Depends: vim-common (= 2:7.4.052-1ubuntu3.1) but 2:7.4.273-2ubuntu4 is to be installed  
+A4:        sudo apt-get purge vim-common  
+          sudo apt-get update  
+          sudo apt-get upgrade  
+          sudo apt-get install vim
